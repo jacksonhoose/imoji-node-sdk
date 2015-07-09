@@ -1,6 +1,6 @@
 {
   "name": "imoji-node",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "Node.js SDK for Imoji",
   "main": "index.js",
   "scripts": {
