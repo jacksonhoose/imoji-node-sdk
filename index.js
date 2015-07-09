@@ -1,6 +1,6 @@
 var _ = require('lodash'),
-    ImojiClient = require("./lib/client"),
-    ImojiConstants = require("./lib/constants");
+    ImojiClient = require('./lib/client'),
+    ImojiConstants = require('./lib/constants');
 
 var Request = function (options) {
     this._client = new ImojiClient(

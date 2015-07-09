@@ -2,7 +2,7 @@
 Node.js SDK for Imoji
 
 ```
-var Imoji = require("imoji-node"),
+var Imoji = require('imoji-node'),
     imojiClient = new Imoji({
     apiKey: 'apiKey',
     apiSecret: 'apiSecret'
@@ -15,7 +15,7 @@ imojiClient.search({
     })
     .then(function(searchResults) {
         searchResults.results.forEach(function(result) {
-            console.log("Imoji image %s", result.preRendered.png.thumbImage);
+            console.log('Imoji image %s', result.preRendered.png.thumbImage);
         });
     });
 ```

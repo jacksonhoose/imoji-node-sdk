@@ -1,4 +1,4 @@
-var imojiClient = new (require("../index"))({
+var imojiClient = new (require('../index'))({
     apiKey: process.env.API_KEY,
     apiSecret: process.env.API_SECRET
 }), assert = require('assert');
@@ -32,7 +32,7 @@ var imojiClient = new (require("../index"))({
         return results;
 
     }).then(function () {
-        console.log("Tests passed successfully");
+        console.log('Tests passed successfully');
         return true;
     }).catch(function (error) {
         console.error(error);
