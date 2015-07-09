@@ -11,14 +11,17 @@ var Request = function (options) {
 };
 
 _.extend(Request.prototype, {
-    getFeatured: function () {
+    featured: function () {
         return this._client.getCall(ImojiConstants.Endpoints.Featured);
     },
-    getCategories: function () {
+    categories: function () {
         return this._client.getCall(ImojiConstants.Endpoints.Categories);
     },
     search: function (options) {
         return this._client.getCall(ImojiConstants.Endpoints.Search, options);
+    },
+    random: function (options) {
+        return this._client.getCall(ImojiConstants.Endpoints.Random, options);
     }
 });
 
